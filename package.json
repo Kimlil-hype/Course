@@ -1,0 +1,19 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "Node.js for snake",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kyryl Matyukha <0992191402.km@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-plugin-node": "^11.1.0"
+  }
+}
