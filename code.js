@@ -1,4 +1,40 @@
 'use strict'
+let canvas = document.getElementById('game');
+
+let context = canvas.getContext('2d');
+
+let grid = 16;
+
+let count = 0;
+
+let snake = {
+
+  x: 160,
+
+  y: 160,
+
+  dx: grid,
+
+  dy: 0,
+
+  cells: [],
+
+  maxCells: 4
+
+};
+
+
+let apple = {
+
+  x: 320,
+
+  y: 320
+
+};
+function getRandomInt(min,max) {
+  return Math.floor(Math.random()*(max - min)) + min;
+}
+
 function loop() {
 requestAnimationFrame(loop);
 if(++count < 4){
@@ -67,7 +103,7 @@ snake.cells.forEach(function(cell, index) {
 
   }
 
-  for(var i = index + 1; i < snake.cells.length; i++){
+  for(let i = index + 1; i < snake.cells.length; i++){
 
     if(cell.x === snake.cells[i].x && cell.y === snake.cells[i].y){
       
