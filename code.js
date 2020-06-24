@@ -1,4 +1,4 @@
-<script>
+'use strict'
 function loop() {
 requestAnimationFrame(loop);
 if(++count < 4){
@@ -128,4 +128,3 @@ else if ((e.which === 40 || e.which === 83) && snake.dy === 0) {
 });
 }
 requestAnimationFrame(loop)
-</script>
